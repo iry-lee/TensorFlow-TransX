@@ -1,0 +1,37 @@
+name: tensorflow27
+channels:
+  - defaults
+dependencies:
+  - _libgcc_mutex=0.1=main
+  - ca-certificates=2020.1.1=0
+  - certifi=2019.11.28=py27_0
+  - libedit=3.1.20191231=h7b6447c_0
+  - libffi=3.3=he6710b0_1
+  - libgcc-ng=9.1.0=hdf63c60_0
+  - libstdcxx-ng=9.1.0=hdf63c60_0
+  - ncurses=6.2=he6710b0_1
+  - pip=9.0.1=py27_1
+  - python=2.7.18=h15b4118_1
+  - readline=8.0=h7b6447c_0
+  - setuptools=36.4.0=py27_1
+  - sqlite=3.32.3=h62c20be_0
+  - tk=8.6.10=hbc83047_0
+  - wheel=0.29.0=py27_0
+  - zlib=1.2.11=h7b6447c_3
+  - pip:
+    - absl-py==0.9.0
+    - astor==0.8.1
+    - backports-weakref==1.0.post1
+    - enum34==1.1.10
+    - funcsigs==1.0.2
+    - futures==3.3.0
+    - gast==0.3.3
+    - keras-preprocessing==1.1.2
+    - mock==3.0.5
+    - numpy==1.16.6
+    - protobuf==3.12.2
+    - six==1.15.0
+    - tensorflow-estimator==1.13.0
+    - termcolor==1.1.0
+prefix: /home/liyirui/miniconda3/envs/tensorflow27
+

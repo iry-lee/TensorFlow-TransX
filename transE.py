@@ -17,7 +17,7 @@ class Config(object):
 		test_lib.setInPath("./data/FB15K/")
 		lib.setBernFlag(0)
 		self.learning_rate = 0.001
-		self.testFlag = False
+		self.testFlag = True
 		self.loadFromData = False
 		self.L1_flag = True
 		self.hidden_size = 100
@@ -64,6 +64,7 @@ class TransEModel(object):
 			neg = tf.reduce_sum((neg_h_e + neg_r_e - neg_t_e) ** 2, 1, keep_dims = True)
 			self.predict = pos
 
+		# 这个地方是loss函数
 		with tf.name_scope("output"):
 			self.loss = tf.reduce_sum(tf.maximum(pos - neg + margin, 0))
 
